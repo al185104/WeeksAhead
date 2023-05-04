@@ -10,6 +10,7 @@ namespace WeeksAhead.ViewModels
         [RelayCommand]
         async Task InitAsync()
         {
+            // ISSUE! It's coming in here with User as null on Android but isn't null on Windows.
             try
             {
                 IsBusy = true;
